@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TO GET SUBJECT MARKS AND PRINT THEM</title>
+</head>
+<body>
+
+	<h1><p>JS PROGRAM TO GET <br>different subject marks as i/p and print them in pop-up box</p></h1>
+
+	<script type="text/javascript">
+		var subject =["math","physics","chemistry"];
+		var marks = new Array();
+
+		for (var i = 0; i < subject.length; i++) {
+			marks[i] = parseInt(prompt("Enter marks of "+subject[i]));
+		}
+
+		var output = "";
+		for (var i = 0; i < subject.length; i++) {
+			output += subject[i]+" marks is "+marks[i]+"\n" ;
+		}
+
+		alert(output);
+
+	</script>
+
+</body>
+</html>
