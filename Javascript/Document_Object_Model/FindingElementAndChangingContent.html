@@ -2,19 +2,25 @@
 <html>
 <head>
 	<title>DOM Object Example</title>
-	<script type="text/javascript" src="domElement.js"></script>
 
 </head>
 <body>
 
-
 	<h2>Hello This is Document object model Example :</h2>
 	<h3>on clicking on submit button the text "hii there" will get changed to "Welcome to our website"</h3>
-	<h1 id="greetings">Hii there</h1>
-	<!-- <h2 class="hello">i'm Sanket Chidrewar</h2> -->
+	<div id="greetings">Hii there</div>
+	<div class="hello">i'm Sanket Chidrewar</div>
 	<!-- <h4>Currently pursuing my PG-DAC from sunbeam pune</h4> -->
+	<script type="text/javascript">
+		function execute() 
+		{
+		document.getElementById("greetings").innerHTML = "Welcome To Our Website";
+		document.getElementsByClassName("hello").innerHTML = "Sanket here" ;
+		}
+	</script>
 
 	<button onclick="execute()">submit</button>
+	<!-- <script type="text/javascript" src="domElement.js"></script> -->
 
 </body>
 
