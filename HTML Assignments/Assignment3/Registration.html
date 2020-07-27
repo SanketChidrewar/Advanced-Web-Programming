@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://students.sunbeamapps.org/assets/img/logo.png">
+    <title>Register</title>
+</head>
+<body>
+    <center>
+        <table cellpadding="10px">
+            <th colspan="2">
+                <h1>Registration</h1>
+            </th>
+            <tr>
+                <td>
+                    <label for="name" >Name</label>
+                </td>
+                <td>
+                    <input required placeholder="Enter Name" type="text" name="" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">BirthDate</label>
+                </td>
+                <td>
+                    <input type="date" id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="birth-time">Birth Time</label>
+                </td>
+                <td>
+                    <input type="time" name="" id="birth-time">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input required placeholder="abc@gmail.com" type="email" name="" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="" id="pass">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <select name="address" id="state">
+                        <option checked value="MH">Maharashtra</option>
+                        <option value="KA">Karnataka</option>
+                    </select>
+                    <select name="address" id="district">
+                        <option value="pune">Pune</option>
+                        <option value="satara">Satara</option>
+                        <option value="latur">Latur</option>
+                        <option value="jaypur">Jaypur</option>
+                        <option value="udaypur">Udaypur</option>
+                    </select>
+                    <select name="address" id="city">
+                        <option value="pune">Pune</option>
+                        <option value="junner">Junner</option>
+                        <option value="mulshi">Mulshi</option>
+                        <option value="baramati">Baramati</option>
+                        <option value="alwar">Alwar</option>
+                        <option value="dausa">Dausa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <p>State &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; District &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; City</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gend" id="gender">Male
+                    <input type="radio" name="gend" id="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="photo">Upload Photo</label>
+                </td>
+                <td>
+                    <input placeholder="Browse your Photo" type="file" name="" id="photo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Select Course</label>
+                </td>
+                <td>
+                    <select name="" id="course">
+                        <optgroup label="PG Diploma Courses">
+                            <option value="pg-dac">PG-DAC</option>
+                            <option value="pg-dmc">PG-DMC</option>
+                            <option value="pg-desd">PG-DESD</option>
+                            <option value="pg-dbda">PG-DBDA</option>
+                        </optgroup>
+                        <optgroup label="Modular Courses">
+                            <option value="core-java">Core Java</option>
+                            <option value="cpp">C++</option>
+                            <option value="big-data">Big Data</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+                <td>
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
