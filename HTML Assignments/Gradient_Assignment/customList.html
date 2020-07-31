@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    ul li{
+        font-size: 30px;
+        list-style-type: disc;
+        color: red;
+    }
+    ul li span{
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li><span> Peaches</span></li>
+        <li><span>Apples</span></li>
+        <li><span>Plums</span></li>
+    </ul>
+</body>
+</html>
+
+ul {list-style: none}
+li::before {content: "•"; color: red}
