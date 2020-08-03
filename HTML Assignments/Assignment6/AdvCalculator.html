@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .outer-div{
+            width: 700px;
+            height: 350px;
+            display: block;
+            background-color: rgb(194, 193, 187);
+            border-radius: 10px;
+        }
+        .div-1{
+            display: inline-block;
+            margin: 10px;
+        }
+        div.div-1 select{
+            width: 200px;
+            height:20px;
+            line-height: 20px;
+            border-radius: 5px;
+        }
+        input{
+            width: 50px;
+            height: 30px;
+            margin: 10px;
+            font-size: 15px;
+            border-radius: 7px;
+        }
+        div.div-4 select{
+            width: 125px;
+            height: 30px;
+            margin: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+
+        }
+        .ip{
+            width: 40px;
+            height: 30px;
+            margin: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced Calculator</h1>
+    <div class="outer-div">
+    <div>
+        <input style="width: 680px;" type="text" name="" id="" placeholder="This is Text box">
+    </div>        
+        <div class="div-1">
+            <select name="degrees" id="">
+                <option value="degrees" >Degrees</option>
+            </select>
+            <span>&nbsp;&nbsp;to&nbsp;&nbsp;</span>
+            <select name="" id="">
+                <option value="radians">Radians</option>
+            </select>
+            <span>&nbsp;&nbsp; &#8646;&nbsp;&nbsp; 0&nbsp;degrees&nbsp;=&nbsp;0&nbsp;radians&nbsp;</span>
+        </div>
+
+        <div class="div-2"> 
+            <input type="button" value="&#8595;n">
+            <input type="button" value="&uarr;n">
+            <input type="button" value="&#215;10^y;">
+            <input type="button" value="mod">
+            <input type="button" value="&#x21a9;">
+            <input type="button" value="C">
+            <input type="button" value="cos">
+            <input type="button" value="sin">
+            <input type="button" value="tan">
+        </div>
+
+        <div class="div-3">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="&#143;">
+            <input type="button" value="&#40;">
+            <input type="button" value="&#41;">
+            <input type="button" value="sinh">
+            <input type="button" value="cosh">
+            <input type="button" value="tanh">
+        </div>
+
+        <div class="div-4">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" value="&#215;">
+            <select name="" id="">
+                <option id="op-1" value="x">x</option>
+            </select>
+            <input class="ip" type="button" value="x&sup1;">
+            <input class="ip" type="button" value="x!">
+            <input class="ip" type="button" value="|x|">
+            <input class="ip" type="button" value="Arg">
+        </div>
+
+        <div class="div-5">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="-">
+            <input type="button" value="n">
+            <input type="button" value="e">
+            <input class="ip" type="button" value="x^y">
+            <input class="ip" type="button" value="&#8730">
+            <input class="ip" type="button" value="log">
+            <input class="ip" type="button" value="In">
+        </div>
+
+        <div class="div-6">
+            <input type="button" value="0">
+            <input type="button" value=".">
+            <input type="button" value="i">
+            <input type="button" value="+">
+            <input type="button" value="=">
+            <input type="button" value="a*b">
+            <input class="ip" type="button" value="Re">
+            <input class="ip" type="button" value="Im">
+            <input class="ip" type="button" value="conj">
+            <input class="ip" type="button" value="f(x)^">
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
