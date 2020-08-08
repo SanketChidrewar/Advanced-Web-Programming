@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: thistle;
+    }
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-box{
+      width: 50%;
+      height: 400px;
+      /* border: 1px solid black; */
+      border-radius: 10px;
+      background-color: white;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .main-image img{
+      position: relative;
+      float: left;
+      width: 40%;
+      height: 400px;
+      border-top-left-radius:10px;
+      border-bottom-left-radius:10px;
+      top: 0px;
+      object-fit: cover;
+
+    }
+    .content-right{
+      position: relative;
+      width: 50%;
+      float: right;
+      margin: 45px 25px;
+    }
+    .content-right img{
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+    }
+    table tr td{
+      padding-right: 30px;
+    }
+    .tooltip-next{
+      visibility: hidden;
+      position: absolute;
+      top: -70%;
+      left: -50%;
+      display: inline-block;
+      background-color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border-radius: 10px;
+      font-weight: bold;
+      color: white;
+      padding: 5px;
+      width: 160px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+    .tooltip-next img{
+      padding: 0px 5px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+    .tooltip:hover + .tooltip-next{
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-box">
+  <div class="main-image">
+    <img src="images/drawers.jpg" alt="">
+
+  </div>
+  <div class="content-right">
+    <strong style="font-size: 25px; line-height: 25px;">Shift the overall look and feel by adding these wonderful 
+    touches to furniture in your home</strong>  
+      <br><br>
+    <div style="font-size: 15px; line-height: 25px; margin-bottom: 40px;"> Ever been in a room and felt like something was missing? Perhaps 
+    it felt slightly bare and uninviting. I’ve got some simple tips 
+    to help you make any room feel complete.</div>
+    <div style="display: inline-block;">
+      <table style="padding-right: 50px;">  
+        <tr>  
+          <td rowspan="3"><img src="images/avatar-michelle.jpg" alt=""></td>
+          <td style="padding-right: 50px;">Michelle Appleton</td>
+          <td rowspan="3" style="display: inline-block; position: relative;">
+            <img class="tooltip" style="width: 30px; height: 30px; border-radius: 30px; background-color: gainsboro; padding: 15px;" src="images/icon-share.svg" alt="">
+            <span class="tooltip-next">SHARE <img src="images/icon-facebook.svg" alt=""> <img src="images/icon-twitter.svg" alt=""><img src="images/icon-pinterest.svg" alt=""></span>
+          </td>
+        </tr>
+        <tr>
+          <td>28 Jun 2020</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sanket Chidrewar</a>.
+  </div>
+
+
+</body>
+</html>
