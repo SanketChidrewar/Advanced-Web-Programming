@@ -55,11 +55,63 @@
       padding: 0;
       margin: 0;
     }
+    .margin-left-page{
+      margin: 100px;
+    }
+    .margin-left-page-mobile-image{
+      visibility: hidden;
+      position: absolute;
+    }
+    @media screen and (max-width: 768px) {
 
-    @media (max-width:375px){
+      .main-div{
+      background-color: antiquewhite;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex-flow: column;
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+    .margin-left-page-mobile-image{
+      visibility: visible;
+      position: static;
+      width: 100%;
 
     }
+    .right-side-div{
+      visibility: hidden;
+      position: absolute;
+    }
+    .margin-left-page{
+      margin: 20px;
+    }
 
+    .head-1{
+      font-family: 'Josefin Sans', sans-serif;
+      color: hsl(0, 36%, 70%);
+      font-size: 30px;
+      text-align: center;
+    }
+    .head-2{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 30px;
+      text-align: center;
+    }
+    .head-3{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      color: hsl(0, 36%, 70%);
+      text-align: center;
+
+    }
+    .col-md-7, .col-md-5{
+      padding: 0;
+      margin: 0;
+    }
+    }
   </style>
 </head>
 <body>
@@ -73,11 +125,13 @@
     <div class="container-fluid">
       <div class="row main-div">
         <div class="col-md-7 left-side-div">
-          <div style="margin: 100px;">
+          <div class="margin-left-page">
             <img class="logo" src="images/logo.svg" alt="">
+            <br><br>
+            <img style="margin: 0px;padding: 0px;" class="margin-left-page-mobile-image" src="images/hero-mobile.jpg" alt="">
             <br>
-            <span class="head-1"><br> W E ' R E <BR></span>
-            <span class="head-2">C O M I N G <br> S O O N <br></span>
+            <p class="head-1"><br> W E ' R E <br></p>
+            <p class="head-2">C O M I N G <br> S O O N <br></p>
             <p class="head-3">Hello fellow shoppers! We're currently building our new <br> fashion store. 
               Add your email below to stay up-to-date with <br> announcements and our launch deals.</p>
               <br>
