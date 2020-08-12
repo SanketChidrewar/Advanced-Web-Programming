@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 9. Write a program to accept a 5 digit number and check whether it is a numeric palindrome. (If
+reversed number is same as entered number it is called palindrome). -->
+
+<h1>Question 9 Assignment 8</h1>
+    
+    <script>
+
+        function checkPalindrome(num)
+        {
+            let temp = num
+            let reverseNumber = 0
+            while(temp!=0)
+            {
+                reverseNumber = (reverseNumber*10) + (parseInt(temp%10))
+                temp = parseInt(temp / 10);
+            }
+            if(num == reverseNumber){
+                console.log(`The number ${num} is Palindrome`)
+            }
+            else{
+                console.log(`The number ${num} not is Palindrome`)
+            }
+        }
+
+        checkPalindrome(12321)
+        checkPalindrome(1212)
+        checkPalindrome(121)
+
+
+    </script>
+
+</body>
+</html>

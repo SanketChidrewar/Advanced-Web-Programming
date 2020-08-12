@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 2. Write a program to accept a 4 digit number and
+a. Display face value of each decimal digit
+b. Display place value of each decimal digit
+c. Display no in reverse order by changing decimal place values
+If user enters a 4 digit number 9361 output should be
+a. 9 3 6 1
+b. 9361 = 9000 + 300 + 60 + 9
+c. 1639 -->
+
+<h1>Question 2 Assignment 8</h1>
+
+<script>
+    function face_value(num)
+    {
+        let temp = num;
+        let arr = []
+        while(temp!=0)
+        {
+            arr.push(parseInt(temp%10));
+            temp = temp / 10;
+        }
+        console.log(arr[3]+" "+arr[2]+" "+arr[1]+" "+arr[0])
+    }
+
+    function place_value(num)
+    {
+        let temp = num;
+        let arr = []
+        while(temp!=0)
+        {
+            arr.push(parseInt(temp%10));
+            temp = temp / 10;
+        }
+        console.log(`${num} = ${arr[3]*1000} +  ${arr[2]*100} +  ${arr[1]*10} +  ${arr[0]}`)
+    }
+
+    function reverse_order_value(num)
+    {
+        let temp = num;
+        let arr = []
+        while(temp!=0)
+        {
+            arr.push(parseInt(temp%10));
+            temp = temp / 10;
+        }
+        console.log(`${arr[0]}${arr[1]}${arr[2]}${arr[3]}`)
+    }
+
+    function execute(num)
+    {
+    face_value(num)
+    place_value(num)
+    reverse_order_value(num)
+    }
+
+    execute(3254)
+
+
+</script>
+
+
+</body>
+</html>

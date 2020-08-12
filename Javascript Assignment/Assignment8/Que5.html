@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 5. Write a program to convert temperature in Celsius to Fahrenheit and vice versa. Formula for
+conversion is
+C=5/9 *( F-32).
+Note :- C =Celsius
+F= Fahrenheit -->
+
+<h1>Question 5 Assignment 8</h1>
+
+<script>
+
+    function CelsiusToFahrenheitConverter(temp_in_cel){
+       
+        let temp_in_far ;
+        console.log(`Temperature ${temp_in_cel} Celsius in fahrenheit is : ${((9/5)*temp_in_cel)+32} `)
+    }
+    function FahrenheitToCelsiusConverter(temp_in_far){
+       
+       let temp_in_cel ;
+       console.log(`Temperature ${temp_in_far} fahrenheit in Celsius is : ${(5/9)*(temp_in_far-32)} `)
+   }
+
+    CelsiusToFahrenheitConverter(32)
+    FahrenheitToCelsiusConverter(89.6)
+
+</script>
+
+</body>
+</html>
