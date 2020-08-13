@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    <style>
+        body{
+            background-color: cornsilk;
+        }
+        .main{
+            border: 2px solid black;
+            padding: 20px;
+            background-color : rgb(243, 237, 237);
+            box-shadow: 3px 3px 3px 5px bisque;
+        }
+        #display{
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+<div style="display: flex; flex-direction: column;" class="block">
+    <h1 class="text-center">Assignment 10</h1>
+
+    <div class="col-md-12 main">
+
+        <h2>Payment Page</h2>
+        <div style="display: flex; flex-direction: row;">
+            <div>
+                <strong style="line-height: 70px;">Accept Cards</strong>
+            </div>
+            <div>
+                <img width="400px" height="70px" src="images/payment.jpg" alt="">
+            </div>
+        </div>
+
+        <br>
+        
+        <label for="name">Name on Card</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="name">
+        </div>
+
+        <br>
+        <label for="card_number">Credit card number</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="card_number">
+        </div>
+
+        <br>
+        <label for="exp_date">Expire Date</label>
+        <div class="input-group">
+            <input type="date" class="form-control" id="exp_date">
+        </div>
+
+        <br>
+        <label for="cvv">CVV</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="cvv">
+        </div>
+
+        <br>
+        <button onclick="displayData()" class="btn btn-primary">Submit</button>
+    </div>
+
+    <div id="display">
+        <h1>Payment Information:</h1>
+        <div id="info">
+
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    function displayData(){
+    document.getElementById("info").innerHTML =`
+        <strong>Name on card : </strong> ${document.getElementById("name").value} <br>
+        <strong>Credit Card Number : </strong>${document.getElementById("card_number").value} <br>
+        <strong>Expire Date :</strong> ${document.getElementById("exp_date").value} <br>
+        <strong>CVV :</strong>${document.getElementById("cvv").value} `;
+    }
+</script>
+
+</body>
+</html>
