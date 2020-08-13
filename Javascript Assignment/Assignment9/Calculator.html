@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .calculator{
+            background-color: burlywood;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 2px 5px 5px blue;
+        }
+        .calculator h2{
+            text-align: center;
+            font-family: fantasy;
+        }
+        .form-control::placeholder{
+            color: rgb(156, 133, 179);            
+        }
+        .input-control{
+            box-shadow: 2px 5px 5px blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Assignment 9</h1>
+        <div class="calculator col-md-12">
+            <h2>Calculator</h2>
+            <hr>
+            <br>
+            <label for="bill">How much was your bill?</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="bill" placeholder="Enter amount" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">RS</span>
+            </div>
+
+            <br><br>
+
+            <label for="tip">Tip to waiter</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="tip" placeholder="Enter amount" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">RS</span>
+            </div>
+
+            <br><br>
+            
+            <label for="no_people">How Many People Sharing the Bill</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="no_people" placeholder="Number of People" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">People</span>
+            </div>
+
+            <br><br>
+            <button class="btn btn-default" onclick="calculateContribution()">Calculate</button>
+            
+            <br><br>
+            
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2">Countribution per person</span>
+                <input id="countri_per_person" type="number" class="form-control" id="no_people" placeholder="country" aria-describedby="basic-addon2">
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function calculateContribution(){
+
+            let total_bill = parseInt(document.getElementById("bill").value )
+            let tip_to_waiter = parseInt(document.getElementById("tip").value)
+            let no_of_people = parseInt(document.getElementById("no_people").value)
+
+            // console.log(total_bill)
+            // console.log(tip_to_waiter)
+            // console.log(no_of_people)
+
+            document.getElementById("countri_per_person").value =(total_bill + tip_to_waiter)/no_of_people; 
+        }
+
+
+
+    </script>
+</body>
+</html>
