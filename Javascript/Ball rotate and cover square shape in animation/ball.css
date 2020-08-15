@@ -1,0 +1,32 @@
+#box{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: red;
+    box-shadow: 3px 2px 5px 7px rosybrown;
+}
+#but{
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@keyframes make_top_Line_of_square{
+    from{transform: translateX(100px) ;}
+    to{transform: translateX(1000px) rotate(720deg) rotateY(45deg) rotateX(45deg);}
+}
+@keyframes make_right_side_Line_of_square{
+    from{transform: translateX(1000px) ;}
+    to{transform: translate(1000px,500px) rotate(720deg) rotateY(45deg) rotateX(45deg);}
+}
+@keyframes make_bottom_Line_of_square{
+    from{transform: translate(1000px,500px) ;}
+    to{transform: translate(100px,500px) rotate(720deg) rotateY(45deg) rotateX(45deg);}
+}
+@keyframes make_left_side_Line_of_square{
+    from{transform: translate(100px,500px) ;}
+    to{transform: translateX(100px) rotate(720deg) rotateY(45deg) rotateX(45deg);}
+}
