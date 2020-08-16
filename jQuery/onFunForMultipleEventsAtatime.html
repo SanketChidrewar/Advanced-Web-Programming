@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On( ) fun Demo</title>
+
+    <style>
+        #box{
+            width: 500px;
+            height: 100px;
+            border: 2px solid black;
+            padding: 20px; 
+            margin: 50px;                 
+            text-align: justify;
+            text-indent: 25px;
+        }
+    </style>
+
+    <script src="JS Libraries/jquery-compressed.js"></script>
+</head>
+<body>
+    <h1>On( ) fun Demo</h1>
+    <div id="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem dolor mollitia assumenda, aliquam laboriosam laborum. In corrupti consequatur aut?</p>
+    </div>
+    <button id="btn">Remove back color gray on mouse Click prop </button>
+    <script>
+        $(document).ready(function(){
+            $('#box').on({
+                "click":function(){
+                    $('#box').css("background-color","gray");
+                },
+                "mouseover":function(){
+                    $('#box').css({"transform":"scale(1.2)","background-color":"pink","color":"white"})
+                },
+                "mouseout":function(){
+                    $('#box').css({"transform":"scale(1.0)","background-color":"yellow","color":"black"})
+                }
+            });
+            $('#btn').click(function(){
+                $('#box').off('click');
+            });
+        });
+    </script>
+</body>
+</html>
