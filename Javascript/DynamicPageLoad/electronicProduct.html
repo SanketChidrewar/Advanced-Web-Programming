@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="text-center pt-5">Electronic Products</h1>
+        <div id="data" class="row">
+            
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+
+            let items = [
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/mobile-12221.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/tv-122212.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/laptops.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/cameras.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/home_enter.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/img18/Wearables/Electronics/Monitorselectronics_Shop_by_Category_Tiles_750x783._CB446460523_.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/headphones-122213.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/memory_card.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/speakers.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/routers.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/hard_drives.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/printers.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/img18/Wearables/Electronics/Smartwatches_electronics_Shop-by-Category-Tiles_750x783._CB446441858_.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/tablets._CB497531413_.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/pc_gaming._CB497531418_.jpg"
+                },
+                {
+                "img":"https://images-eu.ssl-images-amazon.com/images/G/31/Img18/DATA_STORAGE_new_tiles/mobile_accessories.jpg"
+                }               
+            ]
+            
+            let it = '';
+
+            for(let index=0;index<items.length;index++)
+            {
+                let item = items[index];
+                it += `
+                <div class="col-md-3">
+                <img class="card-img-top  mb-4" src="${item["img"]}" alt="">
+                </div>`
+            }
+            $('#data').html(it)
+        });
+    </script>
+
+</body>
+</html>
