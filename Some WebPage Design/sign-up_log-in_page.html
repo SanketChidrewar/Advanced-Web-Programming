@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Log-in Page</title>
+    <style>
+        .log-in_sign-up{
+            width: 60vh;
+            height: 50vh;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: gainsboro;
+
+        }
+        body{
+            background-color:gainsboro;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div class="log-in_sign-up">
+        <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs  nav-justified card-header-tabs text-center">
+                <li class="nav-item">
+                  <a id="sign-up" class="nav-link" href="#">Sign up</a>
+                </li>
+                <li class="nav-item">
+                  <a id="login" class="nav-link active" href="#">Login</a>
+                </li>
+              </ul>
+            </div>
+            <div id="card-body" class="card-body text-left">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Rember me</label>
+                    </div>
+                    <div class="text-center">
+                    <button style="width: 50%;" type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+        
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('#sign-up').click(function(){
+                let str = '';
+                str += `
+                <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Enter Address">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Re-enter Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-enter Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Rember me</label>
+                </div>
+                <div class="text-center">
+                <button style="width: 50%;" type="submit" class="btn btn-primary">Sign Up</button>
+                </div>
+            </form>
+                `
+            $('#card-body').html(str);
+            $('#sign-up').addClass('active');
+            $('#login').removeClass('active');
+            })
+
+            $('#login').click(function(){
+                let str = '';
+                str += `
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Rember me</label>
+                    </div>
+                    <div class="text-center">
+                    <button style="width: 50%;" type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+                `
+                $('#card-body').html(str);
+                $('#login').addClass('active');
+                $('#sign-up').removeClass('active');
+            })
+
+        })
+
+    </script>
+
+</body>
+</html>
