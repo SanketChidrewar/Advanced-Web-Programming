@@ -10,7 +10,7 @@
     print("opening connection<br>");
 
     // step 1: create/open the connection
-    $link = mysqli_connect('localhost', 'root', 'manager', 'data', 3306);
+    $link = mysqli_connect('localhost', 'root', 'manager', 'data', 3306) or die("Connection not created<br>");
     
     // step 1.1: select the db
     // mysqli_select_db($connection, $db);
