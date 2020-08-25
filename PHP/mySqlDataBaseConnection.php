@@ -29,9 +29,11 @@
     // $row = mysqli_fetch_row($result);
     // print($row = mysqli_fetch_assoc($result));
     while ($row = mysqli_fetch_assoc($result)) {
+
     print("<pre>");
     print_r($row);
     print("</pre>");
+    
     }
     print($row = mysqli_fetch_assoc($result));
     print($row = mysqli_fetch_assoc($result));
